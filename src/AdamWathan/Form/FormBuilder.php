@@ -16,6 +16,8 @@ use AdamWathan\Form\Elements\Email;
 use AdamWathan\Form\OldInput\OldInputInterface;
 use AdamWathan\Form\ErrorStore\ErrorStoreInterface;
 
+use AdamWathan\Form\Elements\DatePicker;
+
 class FormBuilder
 {
     private $oldInput;
