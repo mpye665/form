@@ -264,4 +264,16 @@ class FormBuilder
 
         return $this->select($name, $options);
     }
+
+    public function datePicker($name)
+    {
+        $datePicker = new DatePicker($name);
+        if ($value = $this->getValueFor($name))
+        {
+            $datePicker->value($value);
+        }   
+
+        return $datePicker;
+    }
+
 }
