@@ -215,7 +215,7 @@ class FormBuilder
             return $this->getModelValue($name);
         }
 
-        return '';
+        return null;
     }
 
     protected function hasOldInput($name)
