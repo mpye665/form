@@ -12,9 +12,11 @@ abstract class FormControl extends Element
         $this->setAttribute('name', $name);
     }
 
-    public function required()
+    public function required($required = true)
     {
-        $this->setAttribute('required', 'required');
+        if ($required !== false)
+            $this->setAttribute('required', 'required');
+
         return $this;
     }
 
@@ -24,9 +26,11 @@ abstract class FormControl extends Element
         return $this;
     }
 
-    public function disable()
+    public function disable($disabled = true)
     {
-        $this->setAttribute('disabled', 'disabled');
+        if ($disabled !== false)
+            $this->setAttribute('disabled', 'disabled');
+        
         return $this;
     }
 
